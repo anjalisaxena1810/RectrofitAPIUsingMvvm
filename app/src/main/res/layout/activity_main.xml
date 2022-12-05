@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Posts"
+            android:layout_margin="10dp"
+            app:cornerRadius="20dp"
+            android:id="@+id/btn_post" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_post"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Photos"
+            android:layout_margin="10dp"
+            app:cornerRadius="20dp"
+            android:id="@+id/btn_photos" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_photos"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Album"
+            android:layout_margin="10dp"
+            app:cornerRadius="20dp"
+            android:id="@+id/btn_album" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_album"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Comments"
+            android:layout_margin="10dp"
+            app:cornerRadius="20dp"
+            android:id="@+id/btn_comment" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_comment"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="User"
+            app:cornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/btn_user" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_user"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Todo"
+            android:layout_margin="10dp"
+            app:cornerRadius="20dp"
+            android:id="@+id/btn_todo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_display"
+            android:layout_margin="10dp"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@id/btn_todo"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+</layout>
